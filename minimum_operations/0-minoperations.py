@@ -7,7 +7,6 @@ def minOperations(n):
         return 0
     
     num = [float('inf')] * (n + 1)
-    num[1] = 0
     
     for i in range(2, n + 1):
         for j in range(1, i):
