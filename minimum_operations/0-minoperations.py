@@ -18,5 +18,5 @@ def minOperations(n):
             n //= num2
             num1 += num2
         else:
-            num2 +=1
+            num2 += 1
     return num1
