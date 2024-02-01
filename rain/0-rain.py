@@ -13,11 +13,11 @@ def rain(walls):
 
     left_side[0] = walls[0]
     for i in range(1, n):
-        left_side[i] = side(left_side[i - 1], walls[i])
+        left_side[i] = max(left_side[i - 1], walls[i])
 
     right_side[n - 1] = walls[n - 1]
     for i in range(n - 2, -1, -1):
-        right_side[i] = side(right_side[i + 1], walls[i])
+        right_side[i] = max(right_side[i + 1], walls[i])
 
     drops = 0
     for i in range(n):
