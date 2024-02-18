@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+"""modules"""
 def pascal_triangle(n):
     """pascal's triangle"""
     if n <= 0:
